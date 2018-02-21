@@ -1,0 +1,79 @@
+t remote add origin git@github.com:username/new_rep
+ Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   404.php
+#	new file:   LICENSE
+#	new file:   README.md
+#	new file:   archive.php
+#	new file:   comments.php
+#	new file:   footer.php
+#	new file:   functions.php
+#	new file:   gulpfile.js
+#	new file:   header.php
+#	new file:   inc/custom-header.php
+#	new file:   inc/customizer.php
+#	new file:   inc/jetpack.php
+#	new file:   inc/template-functions.php
+#	new file:   inc/template-tags.php
+#	new file:   index.php
+#	new file:   js/customizer.js
+#	new file:   js/navigation.js
+#	new file:   js/skip-link-focus-fix.js
+#	new file:   languages/bcf.pot
+#	new file:   languages/readme.txt
+#	new file:   layouts/content-sidebar.css
+#	new file:   layouts/sidebar-content.css
+#	new file:   package.json
+#	new file:   page.php
+#	new file:   phpcs.xml.dist
+#	new file:   readme.txt
+#	new file:   rtl.css
+#	new file:   screenshot.png
+#	new file:   search.php
+#	new file:   sidebar.php
+#	new file:   single.php
+#	new file:   src/js/main.js
+#	new file:   src/sass/_normalize.scss
+#	new file:   src/sass/elements/_elements.scss
+#	new file:   src/sass/elements/_lists.scss
+#	new file:   src/sass/elements/_tables.scss
+#	new file:   src/sass/forms/_buttons.scss
+#	new file:   src/sass/forms/_fields.scss
+#	new file:   src/sass/forms/_forms.scss
+#	new file:   src/sass/layout/_content-sidebar.scss
+#	new file:   src/sass/layout/_sidebar-content.scss
+#	new file:   src/sass/media/_captions.scss
+#	new file:   src/sass/media/_galleries.scss
+#	new file:   src/sass/media/_media.scss
+#	new file:   src/sass/mixins/_mixins-master.scss
+#	new file:   src/sass/modules/_accessibility.scss
+#	new file:   src/sass/modules/_alignments.scss
+#	new file:   src/sass/modules/_clearings.scss
+#	new file:   src/sass/modules/_infinite-scroll.scss
+#	new file:   src/sass/navigation/_links.scss
+#	new file:   src/sass/navigation/_menus.scss
+#	new file:   src/sass/navigation/_navigation.scss
+#	new file:   src/sass/site/_site.scss
+#	new file:   src/sass/site/primary/_comments.scss
+#	new file:   src/sass/site/primary/_posts-and-pages.scss
+#	new file:   src/sass/site/secondary/_widgets.scss
+#	new file:   src/sass/style.scss
+#	new file:   src/sass/typography/_copy.scss
+#	new file:   src/sass/typography/_headings.scss
+#	new file:   src/sass/typography/_typography.scss
+#	new file:   src/sass/variables-site/_colors.scss
+#	new file:   src/sass/variables-site/_columns.scss
+#	new file:   src/sass/variables-site/_structure.scss
+#	new file:   src/sass/variables-site/_typography.scss
+#	new file:   src/sass/variables-site/_variables-site.scss
+#	new file:   style.css
+#	new file:   template-parts/content-none.php
+#	new file:   template-parts/content-page.php
+#	new file:   template-parts/content-search.php
+#	new file:   template-parts/content.php
+#
