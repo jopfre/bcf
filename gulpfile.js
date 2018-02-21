@@ -54,10 +54,10 @@ gulp.task('styles', function(){
       includePaths: ['./src/sass']
     }).on('error', sass.logError))
     .pipe(postcss([ autoprefixer({ browsers: [">1%"] }) ]))
-    .pipe(gulp.dest('./'))
-    .pipe(rename({suffix: '.min'}))
+    // .pipe(gulp.dest('./'))
+    // .pipe(rename({suffix: '.min'}))
     .pipe(postcss([ cssnano() ]))
-    .pipe(pixrem({ rootValue: '16px', html: false }))
+    .pipe(pixrem({ rootValue: '10px', html: false }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./'))
     .pipe(browserSync.stream());
@@ -102,5 +102,5 @@ gulp.task('default', ['browser-sync'], function(){
   gulp.watch("src/sass/**/*.scss", ['styles']);
   gulp.watch("src/js/**/*.js", ['scripts']);
   gulp.watch("src/img/**/*.*", ['png', 'jpg', 'svg']);
-  gulp.watch(["*.html"],  ['bs-reload']);  
+  gulp.watch(["*.php"],  ['bs-reload']);  
 });

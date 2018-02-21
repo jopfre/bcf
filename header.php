@@ -19,17 +19,26 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<style>
+	#masthead {
+		background-image:radial-gradient(ellipse at center,rgba(3,3,3,.6) 0,rgba(3,3,3,0) 100%),url(<?php header_image(); ?>),linear-gradient(#030303,#030303);
+	}
+	@media (min-width:480px) {
+		#masthead{
+			background-image:linear-gradient(90deg,rgba(3,3,3,.55) 0,rgba(3,3,3,.35) 33%,rgba(3,3,3,0)),url(<?php header_image(); ?>);
+			}
+		}		
+	}
+	</style>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bcf' ); ?></a>
-
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header" >
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
+			if ( is_front_page() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
@@ -43,15 +52,15 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bcf' ); ?></button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+	<nav id="site-navigation" class="main-navigation">
+		<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bcf' ); ?></button> -->
+		<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+			) );
+		?>
+	</nav><!-- #site-navigation -->
 
 	<div id="content" class="site-content">

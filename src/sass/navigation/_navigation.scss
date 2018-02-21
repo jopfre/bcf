@@ -6,4 +6,54 @@
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-@import "menus";
+// @import "menus";
+
+#site-navigation {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  text-align: center;
+  background-color: $white;
+  ul {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    @media(min-width:$bpm) {
+      padding: 16px;
+    }
+    list-style-type: none;
+    display: flex;
+    &:after {
+      content: "";
+      background: linear-gradient(to bottom, rgba($black,0.1) 0%,rgba($black,0) 100%);
+      height: 0.25rem;
+      display: block;
+      position: absolute;
+      bottom: -0.25rem;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+  li {
+    display: inline-block;
+    // margin: 0.5em;
+    padding: 0.4rem;
+    width: 25%;
+  }
+  .active, li:hover {
+    font-weight: bold;
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+    display: inline-block;
+    width: 100%;
+  }
+  a, h1, h2 {
+    font-size: 0.9rem;
+  }
+  h1, h2 {
+    margin: 0;
+  }
+}

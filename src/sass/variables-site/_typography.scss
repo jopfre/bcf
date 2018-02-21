@@ -1,5 +1,23 @@
-$font__main: sans-serif;
+@font-face {
+  font-family: 'avenir-light';
+  src: url('font/avenir-light.eot');
+  src: url('font/avenir-light.eot?#iefix') format('embedded-opentype'),
+       url('font/avenir-light.woff') format('woff'),
+       url('font/avenir-light.ttf') format('truetype'),
+       url('font/avenir-light.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$font__main: 'avenir-light';
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+
+$fontStack: 'avenir-light', 'sans-serif';
+body {
+  font-family: $fontStack;
+}

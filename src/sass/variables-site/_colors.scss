@@ -18,3 +18,19 @@ $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
+
+
+$bpcol: 1024px;
+
+$darkGrey: #191919;
+$midGrey: #222;
+$lightGrey: lighten($midGrey, 10%);
+$veryLightGrey: lighten($midGrey, 20%);
+$text: $darkGrey;
+$textHighlight: lighten(#aeaeae, 20%);
+
+$actionBackground: rgb(221, 221, 221);
+$actionBackgroundHover: darken(rgb(221, 221, 221), 10%);
+
+$white: darken(white, 1%);
+$black: lighten(black, 1%);

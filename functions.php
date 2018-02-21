@@ -118,6 +118,8 @@ add_action( 'widgets_init', 'bcf_widgets_init' );
  */
 function bcf_scripts() {
 	wp_enqueue_style( 'bcf-style', get_stylesheet_uri() );
+	
+	wp_enqueue_script( 'bcf-script', get_template_directory_uri() . '/main.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'bcf-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

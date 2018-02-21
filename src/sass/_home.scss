@@ -1,0 +1,15 @@
+.home {
+  #masthead {
+    @media(min-width: $bpm) {
+      padding-top: 0;
+      padding-bottom: calc(46.73% - 6rem);
+      height: 0;
+    }
+  }
+  .site-branding {
+    @media(min-width:$bpcol) {
+      position: fixed;
+      top: 3.5rem;
+    }
+  }
+}

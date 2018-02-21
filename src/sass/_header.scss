@@ -1,0 +1,40 @@
+#masthead {
+  padding: 16px;
+  background-image: radial-gradient(ellipse at center, rgba($black,0.6) 0%,rgba($black,0) 100%), url(img/little-guys-cropped.jpg), linear-gradient($black, $black);
+  background-position: center 66.66%;
+  @media(min-width: $bpxs) {
+    background-image: linear-gradient(to right, rgba($black, 0.55) 0%, rgba($black, 0.35) 33%, rgba($black, 0) 100%), url(img/little-guys-cropped.jpg);
+  }
+  @media(min-width: $bpcol) {
+    background-position: center bottom;
+  }
+  background-color: $black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px -0.1rem 0.1rem 0px rgba($black,0.1);
+  position: relative;
+}
+
+.site-branding {
+  padding: 1.5em;
+  @media(min-width: $bpm) {
+    padding: 2.5em;
+  }
+  display: inline-block;
+  vertical-align: top;
+  color: $white;
+  h1, span {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: bold;
+  }
+  p {
+    margin: 0.25em 0;
+    font-size: 0.75em;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
